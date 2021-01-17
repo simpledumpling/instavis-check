@@ -10,10 +10,20 @@
 :small_orange_diamond: Anastasiya Belykh    
 :small_orange_diamond: Anastasiya Filatova    
 
--- -
 ## About InstaVis Checker
 
-InstaVis Checker app was created as a final project in the course: "Architecture of neural networks for deep learning" in ITMO University. It is based on the Residual Attention Network architecture which was implemented by us based on the original article:
+InstaVis Checker app was created as a final project in the course: "Architecture of neural networks for deep learning" in ITMO University.
+
+#### What main frameworks and libraries are used
+
+☑️ Keras library for all interaction with the neural network model    
+☑️ Streamlit library if you want to work with the application    
+☑️ Basic libraries for data analysis and processing like Numpy and Pandas    
+☑️ PIL library for images processing
+
+#### What is the underlying neural network architecture?
+
+Project is based on the Residual Attention Network architecture which was implemented by us based on the original article:
 > [**F. Wang et al.** "Residual Attention Network for Image Classification"](https://arxiv.org/pdf/1704.06904.pdf)
 
 #### Why Residual Attention Network?
@@ -30,3 +40,11 @@ And also we found useful GitHub repo of the articles' authors:
 > [Original article's implementation Github repo](https://github.com/KaimingHe/resnet-1k-layers)
 
 Despite the fact that their implementation was not in Keras, it helped us to create ours.
+
+## Project structure
+
+1️⃣ `images_data_processing` directory contains files for images data uploading and processing (this data is used for model training and validation)    
+2️⃣ `model` directory contains jupyter notebook with Attention Residual Network-56 implementation and training    
+3️⃣ `app` directory contains python file with the application code and auxiliary python file with the function for images concatenation    
+
+**NB!** If you see the following structure in the code: `<data_path>`, it means that you should place the path to your real directory here 
