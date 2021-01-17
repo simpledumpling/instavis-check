@@ -48,3 +48,9 @@ Despite the fact that their implementation was not in Keras, it helped us to cre
 3️⃣ `app` directory contains python file with the application code and auxiliary python file with the function for images concatenation    
 
 **NB!** If you see the following structure in the code: `<data_path>`, it means that you should place the path to your real directory here 
+
+In `images_data_processing` directory the ideological order of files is as follows:
+
+:small_blue_diamond: `selected_merges_creation.ipynb`    
+:small_blue_diamond: `automatic_labeling.ipynb`    
+:small_blue_diamond: `final_images_data_creation.ipynb`    
